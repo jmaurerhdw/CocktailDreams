@@ -1,0 +1,922 @@
+h1 {
+  font-family: "Abril Fatface";
+  font-size: clamp(1rem, 0.2857142857rem + 3.8095238095vw, 3.5rem);
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+}
+
+h2 {
+  font-family: "Abril Fatface";
+  font-size: clamp(1rem, 0.9142857143rem + 0.4571428571vw, 1.3rem);
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+}
+
+h3 {
+  font-family: "Abril Fatface";
+  font-size: clamp(0.5rem, 0.3928571429rem + 0.5714285714vw, 0.875rem);
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 15.4px;
+}
+
+p {
+  font-family: "Abril Fatface";
+  font-size: clamp(0.5rem, 0.3928571429rem + 0.5714285714vw, 0.875rem);
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+blockquote {
+  font-family: "Abril Fatface";
+  font-size: 17.5px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+pre {
+  font-family: "Abril Fatface";
+  font-size: 13px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 18.5714px;
+}
+
+a {
+  font-family: Cuprum;
+  font-weight: 400;
+}
+
+input {
+  font-family: Cuprum;
+}
+
+.section_orange {
+  color: #fff;
+  background-color: #e5a150;
+  padding-left: 10rem;
+  padding-block: 5rem 2.5rem;
+  padding-left: clamp(2rem, -0.2857142857rem + 12.1904761905vw, 10rem);
+}
+
+.recipes .header_content {
+  top: 50%;
+  max-width: 39%;
+  left: 50%;
+}
+.recipes .header_content p {
+  line-height: 24px;
+}
+
+.main {
+  width: 78%;
+  margin: 6.25rem auto;
+  display: grid;
+  grid-template-columns: 18% 82%;
+  gap: 1.5rem;
+}
+.main .filter {
+  color: #9c9286;
+}
+.main .filter h4 {
+  color: #4a4945;
+  margin-bottom: 2rem;
+  font-size: clamp(1rem, 0.9142857143rem + 0.4571428571vw, 1.3rem);
+  letter-spacing: 2px;
+}
+.main .filter h4:not(:first-of-type) {
+  margin-top: 6.5rem;
+}
+.main .filter a {
+  font-family: Caprum;
+  font-size: clamp(0.9rem, 0.8142857143rem + 0.4571428571vw, 1.2rem);
+  line-height: 32px;
+  display: block;
+  color: #9c9286;
+}
+.main .filter a:visited {
+  color: #9c9286;
+}
+.main .filter a:hover {
+  color: #e5a150;
+}
+.main .gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  /*@include flex-sp-btwn;
+  flex-wrap: wrap;
+  row-gap: 2rem;*/
+}
+.main .gallery .card {
+  max-width: max-content;
+  padding: 0;
+}
+.main .gallery .card:hover > .card_img {
+  transform: scale(1.05);
+}
+.main .gallery .card h3 {
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+}
+.main .gallery .card h4 {
+  margin-top: 1rem;
+  color: #4a4945;
+  font-family: "Abril Fatface";
+  font-size: clamp(0.8rem, 0.6571428571rem + 0.7619047619vw, 1.3rem);
+  letter-spacing: 2px;
+}
+
+/* cock_one */
+.cock_one .section_orange {
+  padding-top: clamp(5rem, 1.2857142857rem + 19.8095238095vw, 18rem);
+}
+.cock_one .navigation a:hover {
+  color: #fff;
+  border-bottom: 2px solid #fff;
+}
+.cock_one .navigation .fa-martini-glass-citrus:hover, .cock_one .navigation .toggler:hover + div > .fa-martini-glass-citrus {
+  padding-bottom: 4px;
+  border-bottom: 2px solid #fff;
+  color: #fff;
+  cursor: pointer;
+}
+.cock_one .cocktail {
+  display: grid;
+  grid-template-columns: 42% 58%;
+  width: 78%;
+  margin: 4.875rem auto;
+  margin-bottom: 10rem;
+  align-items: center;
+}
+.cock_one .cocktail_img {
+  grid-row: 1/3;
+  grid-column: 1/2;
+}
+.cock_one .cocktail_zutat {
+  grid-row: 1/2;
+  grid-column: 2/3;
+  padding-left: 5.75rem;
+}
+.cock_one .cocktail_zubereitung {
+  grid-row: 2/3;
+  grid-column: 2/3;
+  padding-left: 5.75rem;
+  padding-right: 4rem;
+}
+.cock_one .cocktail p {
+  font-family: Cuprum;
+  letter-spacing: 1px;
+  font-size: clamp(0.8rem, 0.6571428571rem + 0.7619047619vw, 1.3rem);
+  color: #9c9286;
+  line-height: 28px;
+}
+.cock_one .cocktail h4 {
+  margin-bottom: 1rem;
+  font-size: clamp(0.8rem, 0.6571428571rem + 0.7619047619vw, 1.3rem);
+  letter-spacing: 1px;
+}
+
+.card_content.community {
+  display: flex;
+  height: 2.5rem;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.card_content.community h3 {
+  padding-bottom: 0.3rem;
+}
+.card_content_left {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.5rem;
+}
+.card_content_left img {
+  object-fit: contain;
+  max-width: 2.5rem;
+}
+
+.community.cock_one .navigation a:hover {
+  color: #fff;
+  border-bottom: 2px solid #fff;
+}
+.community.cock_one .navigation .fa-martini-glass-citrus:hover, .community.cock_one .navigation .toggler:hover + div > .fa-martini-glass-citrus {
+  padding-bottom: 4px;
+  border-bottom: 2px solid #fff;
+  color: #fff;
+  cursor: pointer;
+}
+.community.cock_one .section_img {
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+}
+.community.cock_one .section_img img {
+  width: clamp(2.5rem, 1.5rem + 5.3333333333vw, 6rem);
+  border: 2px solid #fff;
+  border-radius: 100%;
+}
+.community.cock_one .section_img p {
+  font-family: Cuprum;
+  letter-spacing: 2px;
+  padding-top: 4rem;
+  font-size: clamp(1rem, 0.9142857143rem + 0.4571428571vw, 1.3rem);
+}
+.community.cock_one .cocktail_img {
+  position: relative;
+}
+.community.cock_one .cocktail_img p {
+  position: absolute;
+  bottom: -3rem;
+  left: 0.5rem;
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  font-size: clamp(1rem, 0.8571428571rem + 0.7619047619vw, 1.5rem);
+}
+.community.cock_one .cocktail_img i {
+  font-size: clamp(1rem, 0.6428571429rem + 1.9047619048vw, 2.25rem);
+}
+
+.shop .header_content {
+  top: 50%;
+  transform: translateY(50%);
+  right: 11%;
+  width: fit-content;
+}
+.shop .section_orange {
+  height: clamp(2rem, 0rem + 10.6666666667vw, 9rem);
+  padding: 0;
+}
+.shop .shop_img-right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(2rem, 0.1428571429rem + 9.9047619048vw, 8.5rem);
+  align-items: center;
+  width: 78%;
+  max-width: 70rem;
+  margin: 0 auto;
+  margin-bottom: 10rem;
+}
+.shop .shop_img-right:first-of-type {
+  margin-top: 3.125rem;
+}
+.shop .shop_img-right_content {
+  grid-column: 1/span 1;
+}
+.shop .shop_img-right_content h3 {
+  font-size: clamp(1rem, 0.7142857143rem + 1.5238095238vw, 2rem);
+  color: #4a4945;
+  letter-spacing: 3px;
+  line-height: 1.2em;
+}
+.shop .shop_img-right_content p {
+  font-family: Cuprum;
+  font-size: clamp(0.8rem, 0.6rem + 1.0666666667vw, 1.5rem);
+  color: #9c9286;
+  letter-spacing: 2px;
+  margin-block: 2rem 3rem;
+  line-height: 30px;
+}
+
+.kontakt .navigation a:hover {
+  color: #fff;
+  border-bottom: 2px solid #fff;
+}
+.kontakt .navigation .fa-martini-glass-citrus:hover, .kontakt .navigation .toggler:hover + div > .fa-martini-glass-citrus {
+  padding-bottom: 4px;
+  border-bottom: 2px solid #fff;
+  color: #fff;
+  cursor: pointer;
+}
+.kontakt .section_orange {
+  padding-top: clamp(10rem, 8.2142857143rem + 9.5238095238vw, 16.25rem);
+  padding-inline: 11%;
+}
+.kontakt .section_orange h2 {
+  max-width: 38rem;
+}
+.kontakt .section_orange p {
+  font-family: Cuprum;
+  font-size: clamp(1rem, 0.8571428571rem + 0.7619047619vw, 1.5rem);
+  color: #fff;
+  letter-spacing: 3px;
+  margin-block: 2rem 3rem;
+  line-height: 30px;
+  max-width: 52rem;
+  margin-block: 2rem;
+}
+.kontakt .contact-form {
+  margin: 3.75rem auto;
+  width: 78%;
+  max-width: 70rem;
+}
+.kontakt .contact-form_part {
+  margin-bottom: 3.75rem;
+}
+.kontakt .contact-form_part h3 {
+  font-size: clamp(1rem, 0.8571428571rem + 0.7619047619vw, 1.5rem);
+  font-family: Cuprum;
+  letter-spacing: 3px;
+  margin-bottom: 1em;
+  color: #9c9286;
+}
+.kontakt .contact-form_part input {
+  font-size: clamp(1.5rem, 1.3571428571rem + 0.7619047619vw, 2rem);
+  border: none;
+  width: calc(100% - 1rem);
+  max-width: 34rem;
+  padding: 1px;
+  border: 1px solid #9c9286;
+  padding: 0.5em;
+}
+.kontakt .contact-form_part input.betreff {
+  height: 8rem;
+}
+.kontakt .contact-form_part input.nachricht {
+  height: 20rem;
+}
+.kontakt .contact-form_part input.agb {
+  width: 30px;
+  aspect-ratio: 1;
+}
+.kontakt .contact-form_part input.agb:hover {
+  cursor: pointer;
+}
+.kontakt .contact-form_part.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 2rem;
+}
+.kontakt .contact-form_part.checkbox p {
+  font-size: clamp(1rem, 0.8571428571rem + 0.7619047619vw, 1.5rem);
+  color: #9c9286;
+  font-family: Cuprum;
+  display: flex;
+  flex-wrap: wrap;
+}
+.kontakt .contact-form_part.checkbox a {
+  color: #4a4945;
+}
+.kontakt .contact-form .captcha {
+  max-width: 350px;
+}
+.kontakt .contact-form .captcha:hover {
+  cursor: pointer;
+}
+.kontakt .contact-form .submit {
+  border: none;
+  margin-block: 3.75rem 4rem;
+  font-size: clamp(1rem, 0.8571428571rem + 0.7619047619vw, 1.5rem);
+}
+.kontakt .contact-form .submit:hover {
+  background-color: #ecb97c;
+  cursor: pointer;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fff;
+}
+
+.container {
+  max-width: 90rem;
+  margin: 0 auto;
+  position: relative;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+h2 {
+  font-size: clamp(1.5rem, 1.2142857143rem + 1.5238095238vw, 2.5rem);
+  letter-spacing: 3px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn_light {
+  font-size: clamp(0.75rem, 0.6214285714rem + 0.6857142857vw, 1.2rem);
+  letter-spacing: 2px;
+  color: #fff;
+  background-color: #e5a150;
+  padding: 0.75em 1.25em;
+  width: min-content;
+  text-decoration: none;
+}
+.btn_light:hover {
+  background-color: #ecb97c;
+}
+.btn_light:visited {
+  color: #fff;
+}
+
+.btn_orange {
+  background-color: #e5a150;
+  padding: 0.5em 0.5em;
+  color: #fff;
+  letter-spacing: 4px;
+  font-size: clamp(0.8rem, 0.6571428571rem + 0.7619047619vw, 1.3rem);
+}
+.btn_orange:hover {
+  background-color: #ecb97c;
+}
+
+.navigation {
+  position: absolute;
+  top: 2rem;
+  left: 11%;
+  right: 11%;
+  width: 78%;
+  max-width: 70rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  -webkit-text-stroke: 0.2px #4a4945;
+}
+.navigation a {
+  color: #fff;
+}
+.navigation a:hover {
+  color: #e5a150;
+}
+.navigation_logo {
+  max-width: 9ch;
+  text-align: center;
+  font-size: clamp(1rem, 0.5714285714rem + 2.2857142857vw, 2.5rem);
+  letter-spacing: 4px;
+  line-height: clamp(1.25rem, 0.8928571429rem + 1.9047619048vw, 2.5rem);
+  padding-bottom: 4px;
+}
+.navigation_main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+}
+.navigation_main_list {
+  list-style-type: none;
+  letter-spacing: 3px;
+}
+.navigation_main_list a {
+  font-size: 1.15rem;
+  text-decoration: none;
+  color: #fff;
+}
+.navigation_main_list a:hover {
+  cursor: pointer;
+}
+.navigation_search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #fff;
+  border-radius: 15px;
+  color: #fff;
+  padding-block: 0.5em;
+  padding-inline: 0.75rem 2rem;
+  gap: 0.75rem;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.navigation_search_icon {
+  height: 1.5em;
+}
+.navigation_search_input {
+  font-family: "Abril Fatface";
+  font-size: 0.6rem;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+}
+.navigation::after {
+  position: absolute;
+  content: "";
+  height: 5px;
+  width: 200%;
+  max-width: 90rem;
+  left: -10rem;
+  bottom: -2rem;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+.navigation_mobile {
+  display: none;
+}
+.navigation .fa-martini-glass-citrus:hover, .navigation .toggler:hover + div > .fa-martini-glass-citrus {
+  color: #e5a150;
+  cursor: pointer;
+}
+
+.header {
+  position: relative;
+  z-index: -10;
+  margin-bottom: -6px;
+}
+.header_content {
+  position: absolute;
+  color: #fff;
+  bottom: 5rem;
+  right: 4%;
+  width: clamp(0px, 70%, 840px);
+}
+.header_content h1 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  font-size: clamp(1rem, 0.2857142857rem + 3.8095238095vw, 3.5rem);
+}
+.header_content p {
+  font-family: Cuprum;
+  font-size: clamp(0.9rem, 0.8142857143rem + 0.4571428571vw, 1.2rem);
+  letter-spacing: 3px;
+  line-height: 22px;
+  opacity: 0.8;
+}
+.header img {
+  min-height: 21.25rem;
+}
+
+.section_two_color {
+  height: 32.2%;
+  background: linear-gradient(#e5a150 69%, #fff 69% 100%);
+  padding: 0 11%;
+  padding-bottom: 8.75rem;
+}
+.section_two_color h2 {
+  padding-block: 6rem 2.5rem;
+  color: #fff;
+}
+.section_two_color .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-content: center;
+  gap: 1.7rem;
+}
+.section_two_color .card:hover {
+  transform: scale(1.05);
+}
+
+.card {
+  background-color: #fff;
+  padding: 8px;
+  padding-bottom: 16px;
+}
+.card_content {
+  position: relative;
+  padding-top: 0.5rem;
+}
+.card_content h3 {
+  font-family: Cuprum;
+  font-weight: 400;
+  font-size: clamp(0.9rem, 0.8285714286rem + 0.380952381vw, 1.15rem);
+  color: #9c9286;
+  font-weight: lighter;
+  letter-spacing: 5px;
+}
+.card_content::after {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: auto;
+  background-color: #e5a150;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+}
+
+.section_beige {
+  background-color: #fff3e5;
+}
+.section_beige_content {
+  margin-inline: 11%;
+  padding-block: 5rem;
+  color: #4a4945;
+}
+.section_beige_content p {
+  font-size: clamp(1rem, 0.9142857143rem + 0.4571428571vw, 1.3rem);
+  font-family: Cuprum;
+  letter-spacing: 1px;
+  margin-block: 1rem;
+  line-height: 1.3em;
+  max-width: 70ch;
+}
+.section_beige_content .contact_form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+.section_beige_content .contact_form > input {
+  height: 2.5em;
+  padding-left: 1em;
+  font-size: clamp(1rem, 0.9473684211rem + 0.2807017544vw, 1.2rem);
+  font-size: clamp(1rem, 0.9428571429rem + 0.3047619048vw, 1.2rem);
+  letter-spacing: 2px;
+  color: #9c9286;
+  background-color: #fff3e5;
+  border: 1px solid #4a4945;
+}
+.section_beige_content .contact_button {
+  margin-top: 2.875rem;
+}
+
+.footer {
+  background-color: #fff;
+  padding-inline: 11%;
+  padding-block: 3.75rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  border-top: 1px solid #9c9286;
+}
+.footer .footer_logos {
+  grid-auto-columns: 1/2;
+  display: grid;
+  justify-items: center;
+}
+.footer .footer_logos h2 {
+  color: #4a4945;
+}
+.footer .footer_logos h2:hover {
+  color: #e5a150;
+}
+.footer .footer_logos .footer_logos_down {
+  height: 50px;
+}
+.footer .footer_icons {
+  grid-auto-columns: 2/3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.6rem;
+}
+.footer .footer_icons a {
+  font-size: clamp(1.5rem, 1.3571428571rem + 0.7619047619vw, 2rem);
+  text-align: center;
+  color: #4a4945;
+}
+.footer .footer_contact, .footer .footer_agb {
+  grid-auto-columns: 3/4;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  color: #4a4945;
+  letter-spacing: 2px;
+}
+.footer .footer_contact a, .footer .footer_agb a {
+  text-decoration: none;
+  color: #4a4945;
+}
+.footer a:hover {
+  color: #e5a150;
+}
+
+@media (max-width: 630px) {
+  .header_content {
+    top: 10rem;
+  }
+  .shop .shop_img-right {
+    grid-template-columns: 1fr;
+    text-align: center;
+    margin-bottom: 5rem;
+    padding-top: 1.5rem;
+  }
+  .shop .shop_img-right:not(:last-child) {
+    border-top: 2px solid #4a4945;
+  }
+  .shop .shop_img-right_content {
+    width: 60%;
+    margin: 1rem auto;
+  }
+  .section_beige_content > * {
+    margin-inline: auto;
+  }
+}
+@media (max-width: 675px) {
+  .main {
+    margin-left: clamp(2rem, -0.2571428571rem + 12.0380952381vw, 9.9rem);
+  }
+  .main .gallery {
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+  .recipes .header_content {
+    text-align: center;
+    right: 50%;
+    transform: translateX(50%);
+    top: 9rem;
+  }
+  .section_two_color > h2 {
+    text-align: center;
+  }
+  .section_two_color .card {
+    max-width: 21rem;
+    margin: 0 auto;
+  }
+  .section_beige_content {
+    text-align: center;
+  }
+  .section_beige_content .contact_form {
+    justify-content: center;
+  }
+  .section_beige_content > * {
+    width: 80%;
+  }
+  .footer {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    row-gap: 2rem;
+  }
+  .footer_logos {
+    grid-column: 1/span 2;
+  }
+  .footer .footer_icons {
+    grid-column: 1/span 2;
+    flex-direction: row;
+    gap: 3rem;
+  }
+}
+@media (max-width: 1030px) {
+  .section_two_color {
+    background: linear-gradient(#e5a150 157.387px, transparent 157.387px 100%);
+  }
+  .recipes .header_content {
+    left: auto;
+  }
+  .main .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .cock_one .cocktail {
+    grid-template-columns: 50% 50%;
+    row-gap: 4rem;
+    width: 80%;
+    margin-inline: auto;
+    justify-content: center;
+    margin-bottom: 4rem;
+  }
+  .cock_one .cocktail_img {
+    grid-row: 1/2;
+  }
+  .cock_one .cocktail_zutat {
+    grid-column: 2/3;
+    padding-left: clamp(2.5rem, 1.5714285714rem + 4.9523809524vw, 5.75rem);
+  }
+  .cock_one .cocktail_zubereitung {
+    border-top: 1px solid #4a4945;
+    padding-top: 3rem;
+    grid-column: 1/3;
+    padding-inline: 1rem;
+  }
+}
+@media (max-width: 1190px) {
+  .header_content:not(.recipes .header_content) {
+    width: clamp(420px, 72%, 80%);
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .recipes .header_content {
+    max-width: clamp(420px, 46%, 80%);
+  }
+}
+@media (max-width: 1440px) {
+  .navigation::after {
+    width: clamp(5%, -68.889rem + 187.65vw, 100vh + 10rem);
+  }
+  .navigation_main, .navigation_search {
+    display: none;
+  }
+  .navigation_mobile {
+    display: flex;
+    gap: 1.5rem;
+  }
+  .navigation_mobile a {
+    padding-bottom: 4px;
+  }
+  .navigation_mobile i {
+    font-size: 2.25rem;
+  }
+  .navigation_mobile-hamburger {
+    height: 2rem;
+    aspect-ratio: 1;
+    position: relative;
+  }
+  .navigation_mobile-hamburger .mobile_menu {
+    visibility: hidden;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 100%;
+    height: 100vh;
+    width: 100%;
+    background-color: #e5a150;
+    padding: 8rem 5rem;
+    transition: all 1s ease;
+  }
+  .navigation_mobile-hamburger .mobile_menu ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: left;
+    list-style-type: none;
+    gap: 3rem;
+    padding-block: 1.5rem;
+  }
+  .navigation_mobile-hamburger .mobile_menu ul li {
+    font-size: clamp(2rem, 1.7142857143rem + 1.5238095238vw, 3rem);
+  }
+  .navigation_mobile-hamburger .mobile_menu ul li a:hover {
+    border-bottom: 2px solid #fff;
+    color: #fff;
+  }
+  .navigation_mobile-hamburger .mobile_menu::after, .navigation_mobile-hamburger .mobile_menu::before {
+    content: "";
+    position: fixed;
+    top: -5px;
+    left: 100%;
+    right: 5%;
+    height: 90%;
+    z-index: -1;
+    border: 5px solid #fff;
+    border-bottom-right-radius: 70% 90%;
+    transition: left 1s ease;
+  }
+  .navigation_mobile-hamburger .mobile_menu::before {
+    right: 7%;
+  }
+  .navigation_mobile-hamburger .cocktail_icon {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 3;
+  }
+  .navigation_mobile-hamburger .cocktail_icon i:first-of-type {
+    transform: scale(1);
+    transition: transform 1s ease;
+  }
+  .navigation_mobile-hamburger .cocktail_icon i:last-of-type {
+    transform: scale(0);
+    transition: transform 1s ease;
+  }
+  .navigation_mobile-hamburger .toggler {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    opacity: 0;
+    height: inherit;
+    aspect-ratio: 1;
+  }
+  .navigation_mobile-hamburger .toggler:hover {
+    cursor: pointer;
+  }
+  .navigation_mobile-hamburger .toggler:checked {
+    z-index: 4;
+  }
+  .navigation_mobile-hamburger .toggler:checked {
+    top: 110%;
+  }
+  .navigation_mobile-hamburger .toggler:checked ~ .mobile_menu {
+    visibility: visible;
+    left: 0;
+    transition: left 1s ease;
+  }
+  .navigation_mobile-hamburger .toggler:checked ~ .mobile_menu::after, .navigation_mobile-hamburger .toggler:checked ~ .mobile_menu::before {
+    left: -5px;
+  }
+  .navigation_mobile-hamburger .toggler:checked ~ .cocktail_icon i:first-of-type {
+    transform: scale(0);
+  }
+  .navigation_mobile-hamburger .toggler:checked ~ .cocktail_icon i:last-of-type {
+    transform: scale(1);
+  }
+  .navigation_mobile-hamburger .fa-square-xmark:hover, .navigation_mobile-hamburger .toggler:hover + div > .fa-square-xmark {
+    padding-bottom: 4px;
+    border-bottom: 2px solid #fff;
+  }
+}/*# sourceMappingURL=main.css.map */
