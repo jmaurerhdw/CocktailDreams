@@ -1,0 +1,42 @@
+.shop {
+    & .header_content {
+        top: 50%;
+        transform: translateY(50%);
+        right: 11%;
+        width: fit-content;
+    }
+    & .section_orange {
+        height: f-clamp(2, 9);
+        padding: 0;
+    }
+    & .shop_img-right {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: f-clamp(2, 8.5);
+        align-items: center;
+        width: 78%;
+        max-width: 70rem;
+        margin: 0 auto;
+        margin-bottom: 10rem;
+        &:first-of-type {
+            margin-top: 3.125rem;
+        }
+        &_content {
+            grid-column: 1 / span 1;
+            & h3 {
+                font-size: f-clamp(1, 2);
+                color: $txt-dark;
+                letter-spacing: 3px;
+                line-height: 1.2em;
+            }
+            & p {
+                font-family: Cuprum;
+                font-size: f-clamp(0.8, 1.5);
+                color: $txt-dark-light;
+                letter-spacing: 2px;
+                margin-block: 2rem 3rem;
+                line-height: 30px;
+            }
+        }
+    }
+}

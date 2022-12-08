@@ -1,0 +1,302 @@
+@import "./variables";
+@import "./font";
+@import "./rezepte";
+@import "./rezepte_pages";
+@import "./community";
+@import "./commmunity_pages";
+@import "./shop";
+@import "./kontakt";
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: $clr-bg;
+}
+.container {
+    max-width: 90rem;
+    margin: 0 auto;
+    position: relative;
+}
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+h2 {
+    //@include fontclamp(1.5, 2.5);
+    font-size: f-clamp(1.5, 2.5);
+    letter-spacing: 3px;
+}
+a {
+    text-decoration: none;
+}
+.btn_light {
+    font-size: f-clamp(0.75, 1.2);
+    letter-spacing: 2px;
+    color: $txt-light;
+    background-color: $clr-orange;
+    padding: 0.75em 1.25em;
+    width: min-content;
+    text-decoration: none;
+    &:hover {
+        background-color: lighten($clr-orange , $amount: 10%);
+    }
+    &:visited {
+        color: $txt-light;
+    }
+}
+.btn_orange {
+    background-color: $clr-orange;
+    padding: 0.5em 0.5em;
+    color: $txt-light;
+    letter-spacing: 4px;
+    font-size: f-clamp(0.8, 1.3);
+    &:hover {
+        background-color: lighten($clr-orange , $amount: 10%);
+    }
+}
+
+.navigation {
+    position: absolute;
+    top: 2rem;
+    left: 11%;
+    right: 11%;
+    width: 78%;
+    max-width: 70rem;
+    @include flex-sp-btwn;
+    color: $txt-light;
+    -webkit-text-stroke: 0.2px $txt-dark;
+    & a {
+        color: $txt-light;
+        &:hover{
+            color: $clr-orange;
+        }
+    }
+    &_logo {
+        max-width: 9ch;
+        text-align: center;
+        font-size: f-clamp(1, 2.5);
+        letter-spacing: 4px;
+        line-height: f-clamp(1.25, 2.5);
+        padding-bottom: 4px;
+    }
+    &_main {
+        @include flex-sp-btwn;
+        gap: 3rem;
+        &_list {
+            list-style-type: none;
+            letter-spacing: 3px;
+            & a {
+                font-size: 1.15rem;
+                text-decoration: none;
+                color: $txt-light;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }    
+    }
+    &_search {
+        @include flex-sp-btwn;
+        border: 1px solid $clr-bg;
+        border-radius: 15px;
+        color: $txt-light;
+        padding-block: 0.5em;
+        padding-inline: 0.75rem 2rem;
+        gap: 0.75rem;
+        background-color: rgba(#000000, 0.1);
+        &_icon {
+            height: 1.5em;
+        }
+        &_input {
+            font-family: "Abril Fatface";
+            font-size: 0.6rem;
+            background-color: transparent;
+            color: $txt-light;
+            border: none;
+        }
+    }
+    &::after {
+        @include pseudo(5px, 200%);
+        max-width: 90rem;
+        left: -10rem;
+        bottom: -2rem;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+    }
+    &_mobile{
+        display: none;
+    }
+    & .fa-martini-glass-citrus:hover,
+    & .toggler:hover + div > .fa-martini-glass-citrus{
+        color: $clr-orange;
+        cursor: pointer;
+    }
+}
+
+.header {
+    position: relative;
+    z-index: -10;
+    margin-bottom: -6px;
+    &_content {
+        position: absolute;
+        color: $txt-light;
+        bottom: 5rem;
+        right: 4%;
+        width: clamp(0px, 70%, 840px);
+        & h1 {
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+            font-size: f-clamp(1, 3.5);
+        }
+        & p {
+            font-family: Cuprum;
+            font-size: f-clamp(0.9, 1.2);
+            letter-spacing: 3px;
+            line-height: 22px;
+            opacity: 0.8;
+        }
+    }
+    img {
+        min-height: 21.25rem;
+    }
+}
+
+
+.section_two_color {
+    @include two-clr-69($clr-orange, $clr-bg);
+    padding: 0 11%;
+    padding-bottom: 8.75rem;
+    & h2 {
+        padding-block: 6rem 2.5rem;
+        color: $txt-light; 
+    }
+    & .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        justify-content: center;
+        gap: 1.7rem;
+    }
+    & .card:hover {
+        transform: scale(1.05);
+    }
+}
+
+.card {
+    background-color: $clr-bg;
+    padding: 8px;
+    padding-bottom: 16px;
+    &_content {
+        position: relative;
+        padding-top: 0.5rem;
+        & h3{
+            font-family: Cuprum;
+            font-weight: 400;
+            font-size: f-clamp(0.9, 1.15);
+            color: $txt-dark-light;
+            font-weight: lighter;
+            letter-spacing: 5px;
+        }
+        &::after {
+            @include pseudo(8px, auto);
+            background-color: $clr-orange;
+            bottom: -10px;
+            left: 0;
+            right: 0;
+        }
+    }
+}
+
+.section_beige {
+    background-color: $clr-beige;
+    &_content {
+        margin-inline: 11%;
+        padding-block: 5rem;
+        color: $txt-dark;
+        & p {
+            font-size: f-clamp(1, 1.3);
+            font-family: Cuprum;
+            letter-spacing: 1px;
+            margin-block: 1rem;
+            line-height: 1.3em;
+            max-width: 70ch;
+        }
+        & .contact_form {
+            @include flex-sp-btwn;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            gap: 2rem;
+            & > input {
+                height: 2.5em;
+                padding-left: 1em;
+                @include fontclamp(1, 1.2);
+                font-size: f-clamp(1, 1.2);
+                letter-spacing: 2px;
+                color: $txt-dark-light;
+                background-color: $clr-beige;
+                border: 1px solid $txt-dark;
+            }
+        }
+        & .contact_button {
+            margin-top: 2.875rem;
+        }
+    }
+}
+
+.footer {
+    background-color: $clr-bg;
+    padding-inline: 11%;
+    padding-block: 3.75rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    border-top: 1px solid $txt-dark-light;
+    & .footer_logos {
+        grid-auto-columns: 1 / 2;
+        display: grid;
+        justify-items: center;
+        & h2 {
+            color: $txt-dark;
+            &:hover {
+                color: $clr-orange;
+            }
+        }
+        & .footer_logos_down {
+            height: 50px;
+        }
+    }
+    & .footer_icons {
+        grid-auto-columns: 2 / 3;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 1.6rem;
+        & a {
+            font-size: f-clamp(1.5, 2);
+            text-align: center;
+            color: $txt-dark;
+        }
+    }
+    & .footer_contact,
+    & .footer_agb  {
+        grid-auto-columns: 3 / 4;
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+        color: $txt-dark;
+        letter-spacing: 2px;
+        & a {
+            text-decoration: none;
+            color: $txt-dark;
+        }
+    }
+    & a:hover {
+        color: $clr-orange;
+    }
+}
+
+@import "./media-querry";

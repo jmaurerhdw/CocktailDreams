@@ -1,0 +1,73 @@
+$clr-orange: #e5a150;
+$clr-bg: #fff;
+$clr-beige: #fff3e5;
+$txt-light: #fff;
+$txt-dark: #4a4945;
+$txt-dark-light: #9c9286;
+
+
+@mixin flex-sp-btwn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+}
+
+@mixin pseudo($height, $width) {
+    position: absolute;
+    content: "";
+    height: $height;
+    width: $width;
+}
+
+@mixin two-clr-69($clr-one, $clr-two) {
+    height: 32.2%;
+    background: linear-gradient($clr-one 69%, $clr-two 69% 100%);
+}
+
+@mixin grid-col-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 25%);
+    gap: 1.3rem;
+    max-width: 78%;
+    margin: 0 auto;
+}
+
+
+@mixin fontclamp($a, $b) {
+    $m: calc(($b - $a) / (90 - 18.75));
+    $y: $a - $m * 18.75;
+    font-size: clamp($a * 1rem, $y * 1rem + $m * 100vw, $b * 1rem);
+}
+@mixin lineclamp($a, $b) {
+    line-height: clamp($a, 1em, $b);
+}
+@mixin gapclamp($a, $b) {
+    $m: calc(($b - $a) / (90 - 24.375));
+    $y: $a - $m * 18.75;
+    gap: clamp($a * 1rem, $y * 1rem + $m * 100vw, $b * 1rem);
+}
+@mixin heightclamp($a, $b) {
+    $m: calc(($b - $a) / (90 - 24.375));
+    $y: $a - $m * 18.75;
+    height: clamp($a * 1rem, $y * 1rem + $m * 100vw, $b * 1rem);
+}
+@mixin widthclamp($a, $b) {
+    $m: calc(($b - $a) / (90 - 24.375));
+    $y: $a - $m * 18.75;
+    width: clamp($a * 1rem, $y * 1rem + $m * 100vw, $b * 1rem);
+}
+@mixin padtopclamp($a, $b) {
+    $m: calc(($b - $a) / (90 - 24.375));
+    $y: $a - $m * 18.75;
+    padding-top: clamp($a * 1rem, $y * 1rem + $m * 100vw, $b * 1rem);
+}
+@mixin padleftclamp($a, $b) {
+    $m: calc(($b - $a) / (90 - 24.375));
+    $y: $a - $m * 18.75;
+    padding-left: clamp($a * 1rem, $y * 1rem + $m * 100vw, $b * 1rem);
+}
+@function f-clamp($a, $b) {
+    $m: calc(($b - $a) / (90 - 24.375));
+    $y: $a - $m * 18.75;
+    @return clamp($a * 1rem, $y * 1rem + $m * 100vw, $b * 1rem);
+}
