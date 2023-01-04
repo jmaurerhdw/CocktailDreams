@@ -67,7 +67,7 @@ $txt-dark-light: #9c9286;
     padding-left: clamp($a * 1rem, $y * 1rem + $m * 100vw, $b * 1rem);
 }
 @function f-clamp($a, $b) {
-    $m: calc(($b - $a) / (90 - 24.375));
+    $m: calc(($b - $a) / (90 - 18.75));
     $y: $a - $m * 18.75;
     @return clamp($a * 1rem, $y * 1rem + $m * 100vw, $b * 1rem);
 }
