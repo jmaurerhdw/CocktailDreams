@@ -228,11 +228,6 @@
                         }
                     }
                 }
-                & .fa-square-xmark:hover,
-                & .toggler:hover + div > .fa-square-xmark {
-                    padding-bottom: 4px;
-                    border-bottom: 2px solid $txt-light;
-                }
             }
         }
     }

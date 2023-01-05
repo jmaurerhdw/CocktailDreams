@@ -112,7 +112,7 @@ a {
             height: 1.5em;
         }
         &_input {
-            font-family: "Abril Fatface";
+            font-family: "Abril Fatface", 'Times New Roman', Times, serif;
             font-size: 0.6rem;
             background-color: transparent;
             color: $txt-light;
@@ -133,6 +133,7 @@ a {
     & .fa-martini-glass-citrus:hover,
     & .toggler:hover + div > .fa-martini-glass-citrus{
         cursor: pointer;
+        color: $clr-orange;
     }
 }
 
@@ -153,7 +154,7 @@ a {
             font-size: f-clamp(1, 3.5);
         }
         & p {
-            font-family: Cuprum;
+            font-family: Cuprum, Arial, Helvetica, sans-serif;
             font-size: f-clamp(0.9, 1.2);
             letter-spacing: 3px;
             line-height: 22px;
@@ -189,11 +190,12 @@ a {
     background-color: $clr-bg;
     padding: 8px;
     padding-bottom: 16px;
+    transition: transform 0.2s ease-in;
     &_content {
         position: relative;
         padding-top: 0.5rem;
         & h3{
-            font-family: Cuprum;
+            font-family: Cuprum, Arial, Helvetica, sans-serif;
             font-weight: 400;
             font-size: f-clamp(0.9, 1.15);
             color: $txt-dark-light;
@@ -218,7 +220,7 @@ a {
         color: $txt-dark;
         & p {
             font-size: f-clamp(1, 1.3);
-            font-family: Cuprum;
+            font-family: Cuprum, Arial, Helvetica, sans-serif;
             letter-spacing: 1px;
             margin-block: 1rem;
             line-height: 1.3em;

@@ -21,7 +21,7 @@
     width: 78%;
     margin: 6.25rem auto;
     display: grid;
-    grid-template-columns: 18% 82%;
+    grid-template-columns: 18% 1fr;
     gap: 1.5rem;
     & .filter {
         color: $txt-dark-light;
@@ -35,7 +35,7 @@
             }
         }
         & a {
-            font-family: Caprum;
+            font-family: Cuprum, Arial, Helvetica, sans-serif;
             font-size: f-clamp(0.9, 1.2);
             line-height: 32px;
             display: block;
@@ -69,7 +69,7 @@
             & h4 {
                 margin-top: 1rem;
                 color: $txt-dark;
-                font-family: "Abril Fatface";
+                font-family: "Abril Fatface", 'Times New Roman', Times, serif;
                 font-size: f-clamp(0.8, 1.3);
                 letter-spacing: 2px;
             }

@@ -1,5 +1,5 @@
 h1 {
-    font-family: "Abril Fatface";
+    font-family: "Abril Fatface", 'Times New Roman', Times, serif;
     font-size: f-clamp(1, 3.5);
     font-style: normal;
     font-variant: normal;
@@ -7,14 +7,14 @@ h1 {
     line-height: 26.4px;
 }
 h2 {
-    font-family: "Abril Fatface";
+    font-family: "Abril Fatface", 'Times New Roman', Times, serif;
     font-size: f-clamp(1, 1.3);
     font-style: normal;
     font-variant: normal;
     font-weight: 500;
 }
 h3 {
-    font-family: "Abril Fatface";
+    font-family: "Abril Fatface", 'Times New Roman', Times, serif;
     font-size: f-clamp(0.5, 0.875);
     font-style: normal;
     font-variant: normal;
@@ -22,7 +22,7 @@ h3 {
     line-height: 15.4px;
 }
 p {
-    font-family: "Abril Fatface";
+    font-family: "Abril Fatface", 'Times New Roman', Times, serif;
     font-size: f-clamp(0.5, 0.875);
     font-style: normal;
     font-variant: normal;
@@ -30,7 +30,7 @@ p {
     line-height: 20px;
 }
 blockquote {
-    font-family: "Abril Fatface";
+    font-family: "Abril Fatface", 'Times New Roman', Times, serif;
     font-size: 17.5px;
     font-style: normal;
     font-variant: normal;
@@ -38,7 +38,7 @@ blockquote {
     line-height: 25px;
 }
 pre { 
-    font-family: "Abril Fatface";
+    font-family: "Abril Fatface", 'Times New Roman', Times, serif;
     font-size: 13px;
     font-style: normal;
     font-variant: normal;
@@ -46,9 +46,9 @@ pre {
     line-height: 18.5714px;
 }
 a { 
-    font-family: Cuprum; 
+    font-family: Cuprum, Arial, Helvetica, sans-serif; 
     font-weight: 400;
 }
 input { 
-    font-family: Cuprum;
+    font-family: Cuprum, Arial, Helvetica, sans-serif;
 }
